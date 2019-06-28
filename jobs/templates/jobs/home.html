@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% load static from staticfiles %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>Ugocode Website</title>
+  <link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}"/>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'Ulogo2.png' %}"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <i class="fab fa-instagram">
+          <a class="nav-item nav-link" href="http://instagram.com/ugobozz1/">Instagram </a></i>
+          <a class="nav-item nav-link" href=" {% static 'UgosCV.pdf' %}">Resume</a>
+          <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Hello I'm Ugocode</h1>
+        <p class="lead text-muted">Welcome to my Portfolio page where you can see some of the jobs that I have handled and
+          you can also see my resume check me out on instagram and read my personal blog.</p>
+        <p>
+          <a href="mailto:obiohaugo5@gmail.com" class="btn btn-primary my-2">Send me a Mail</a>
+        </p>
+        <img class = "img-fluid" src="{% static 'ugophoto.jpg' %}" height="200" width="300" >
+      </div>
+    </section>
+
+
+    <h1 class= 'text-center'> <font color="purple"> These are a few of my works, they are awsomely made with Passion </font></h1>
+    <!--List of Jobs-->
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row">
+
+          {% for job in jobs.all %}
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{ job.image.url }}"/>
+              <div class="card-body">
+                <p class="card-text">{{ job.summary }}.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  <!--     <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                  <!--  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                  </div>
+                <!--  <small class="text-muted">{% now "m" %} mins</small> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+     </div>
+     <p class = 'text-center' > I love Python and I love to create awesome stuff with it, to me its the best programming language in the world   </p>
+   </div>
+ </div>
+
+
+  </main>
+
+</body>
+
+
+
+  <footer class="text-muted">
+    <div class="container text-center">
+      <p class="float-right">
+        <a href="#">Back to top</a>
+      </p>
+      <p>Made with Passion. All Rights Reserved &copy; Ugocode {% now "Y" %} </p>
+
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+  </html>
