@@ -7,9 +7,13 @@ The site is articulately made with great precision.
 
 # File guide:
 jobs : the app for placing jobs done 
+
 Portfolio : the website main page
+
 media : where all the media files are stored 
+
 db.sqlite3 : database for this project
+
 manage.py : django file
  
 # Purpose
