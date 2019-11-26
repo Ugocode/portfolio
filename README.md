@@ -18,3 +18,4 @@ manage.py : django file
  
 # Purpose
 Its more like an advertisement of some of the diffrent works that I have completed placed in tiles form. 
+it consist of E-Comersce website, Executive Education website, Churches, NGOs
