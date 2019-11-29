@@ -1,5 +1,7 @@
-# portfolio
+# Portfolio
 This is a python Django made website for my web Design works.
+
+![](Portfoliopage.png)
 
 All the sites in this portfolio project I have done and more.
 
