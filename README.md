@@ -3,9 +3,9 @@ This is a python Django made website for my web Design works.
 
 ![](Portfoliopage.png)
 
-All the sites in this portfolio project I have done and more.
+All sites listed in this portfolio project and more were made by my humble self.
 
-The site is articulately made with great precision.
+The sites were articulately made with great precision.
 
 # File guide:
 jobs : the app for placing jobs done 
