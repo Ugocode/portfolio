@@ -19,5 +19,5 @@ db.sqlite3 : database for this project.
 manage.py : django file.
  
 # Purpose
-Its more like an advertisement of some of the diffrent works that I have completed placed in tiles form. 
-it consist of E-Comersce website, Executive Education website, Churches, NGOs
+This is a page to showcase some of the diffrent works that I have completed in the past and placed in tile form. 
+it consist of E-Commerce website, Executive Education website, Churches, NGOs
