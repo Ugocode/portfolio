@@ -21,3 +21,5 @@ manage.py : django file.
 # Purpose
 This is a page to showcase some of the diffrent works that I have completed in the past and placed in tile form. 
 it consist of E-Commerce website, Executive Education website, Churches, NGOs
+
+Yes I create some of the best designs out there  
