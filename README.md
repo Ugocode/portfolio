@@ -7,6 +7,8 @@ All sites listed in this portfolio project and more were made by my humble self.
 
 The sites were articulately made with great precision.
 
+You can check them out online and verify for yourself.
+
 # File guide:
 jobs : the app for placing jobs done 
 
